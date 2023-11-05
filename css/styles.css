@@ -1,0 +1,94 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.cotainer{
+    width: 1000px ;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.list{
+    display: flex;
+flex-wrap: wrap;
+}
+.list-item{
+    flex-basis: 450px;
+    height: 94px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.list-item:nth-child(1) {
+ background-color: red;
+ border-top-left-radius: 20px;
+ border-left: 3px solid black;
+ border-top: 3px solid black;
+}
+.list-item:nth-child(2) {
+background-color: aqua;
+order: 3;
+flex-basis: 300px;
+flex-shrink: 0;
+border-bottom: 3px solid black;
+}
+.list-item:nth-child(3) {
+background-color: purple;
+order: 2;
+flex-basis: 300px;
+flex-shrink: 0;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+}
+.list-item:nth-child(4) {
+background-color: green;
+order: 4;
+flex-basis: 300px;
+flex-shrink: 0;
+border-bottom: 3px solid black;
+border-right: 3px solid black;
+}
+.list-item:nth-child(5) {
+    background-color: orange;
+    border-top-right-radius: 20px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
